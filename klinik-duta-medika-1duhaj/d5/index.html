@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Contoh Rancangan 5: Klinik Duta Medika</title>
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;line-height:1.65;overflow-x:hidden}p{margin:0}img{max-width:100%;display:block}
+a:focus-visible,summary:focus-visible{outline:3px solid currentColor;outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 22px}
+.banner{position:sticky;top:0;z-index:40;background:#fff3cd;color:#4a3600;font:13px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;padding:8px 14px;text-align:center;border-bottom:1px solid #f0d98a}
+.banner{display:flex;flex-wrap:wrap;gap:6px 12px;justify-content:center;align-items:center;line-height:1.4}
+.banner a{color:#4a3600}.dn{display:inline-flex;gap:4px}
+.dn a,.dn b{display:inline-grid;place-items:center;min-width:26px;height:26px;border-radius:13px;font-weight:700;text-decoration:none}
+.dn a{background:rgba(74,54,0,.1)}.dn b{background:#4a3600;color:#fff3cd}
+.banner .pilih{background:#4a3600;color:#fff3cd;padding:5px 12px;border-radius:999px;text-decoration:none;font-weight:700}
+.credit{font-size:11px;margin-top:10px;opacity:.75}.credit a,.shot a,footer a{color:inherit}
+.fab{position:fixed;right:18px;bottom:18px;z-index:30;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;font:700 14px system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.28)}
+details{margin:0 0 12px}summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:14px}
+summary::-webkit-details-marker{display:none}summary::after{content:"+";font-size:24px;line-height:1;transition:transform .2s}
+details[open] summary::after{transform:rotate(45deg)}details p{margin-top:10px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+body{background:hsl(172 14% 8%);color:hsl(172 22% 94%);font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif}
+h1,h2,h3{font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;font-weight:400;letter-spacing:.005em}
+.hero{position:relative;min-height:min(86vh,760px);display:grid;place-items:center;text-align:center;isolation:isolate;padding:80px 0}
+.hero .bgp{position:absolute;inset:0;z-index:-2;background-size:cover;background-position:center}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,hsl(172 14% 8% / 0.78),hsl(172 14% 8% / 0.6) 45%,hsl(172 14% 8%))}
+.hero.np{background:radial-gradient(900px 520px at 50% 0%,hsl(172 40% 22%),hsl(172 14% 8%) 70%)}
+.hero .kat{font-size:15px;color:hsl(172 58% 70%);margin:0 0 22px}
+h1{font-size:clamp(38px,7.4vw,84px);line-height:1.04;max-width:14em;margin:0 auto 22px}
+.ln{width:64px;height:1px;background:hsl(172 58% 70%);margin:0 auto 24px}
+.sub{font-size:clamp(17px,2.2vw,20px);color:hsl(172 12% 68%);max-width:32em;margin:0 auto 34px}
+.btn{display:inline-block;color:hsl(172 58% 70%);border:1px solid hsl(172 58% 70%);text-decoration:none;padding:15px 36px;letter-spacing:.04em;transition:background .25s,color .25s}
+.btn:hover{background:hsl(172 58% 70%);color:hsl(172 14% 8%)}
+.rate{margin-top:34px;color:hsl(172 12% 68%);font-size:15px}.rate b{color:hsl(172 22% 94%);font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;font-size:22px;font-weight:400}
+.hero .credit{position:absolute;left:0;right:0;bottom:14px;color:hsl(172 12% 68%)}
+section{padding:clamp(56px,9vw,104px) 0;text-align:center}
+section.alt{background:hsl(172 14% 11%)}
+h2{font-size:clamp(28px,4.2vw,44px);line-height:1.12;margin:0 auto 14px;max-width:18em}
+h2::after{content:"";display:block;width:48px;height:1px;background:hsl(172 58% 70%);margin:20px auto 40px}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));text-align:center}
+.col{padding:6px 30px}.col+.col{border-left:1px solid hsl(172 16% 24%)}
+.col h3{font-size:23px;margin:0 0 10px;color:hsl(172 58% 70%)}.col p{color:hsl(172 12% 68%)}
+.lg{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:0 56px;text-align:left;max-width:900px;margin:0 auto}
+.it{padding:24px 0;border-bottom:1px solid hsl(172 16% 24%)}.it h3{font-size:22px;margin:0 0 6px}.it p{color:hsl(172 12% 68%)}
+.note{font-size:13px;color:hsl(172 12% 68%);margin-top:22px}
+.about{max-width:42em;margin:0 auto;font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;font-size:clamp(20px,2.8vw,27px);line-height:1.6;font-style:italic;color:hsl(172 22% 94%)}
+.shot{margin:34px auto 0;max-width:620px;position:relative}.shot img{width:100%;aspect-ratio:16/9;object-fit:cover;filter:saturate(.85)}.shot figcaption{font-size:12px;color:hsl(172 12% 68%);margin-top:8px}
+.stp{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.stp div{padding:4px 28px}.stp div+div{border-left:1px solid hsl(172 16% 24%)}.stp h3{font-size:21px;margin:0 0 6px}.stp p{color:hsl(172 12% 68%)}.stp span{font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;color:hsl(172 58% 70%);font-size:34px;display:block;margin-bottom:8px}
+details{max-width:760px;margin:0 auto 12px;text-align:left;border:1px solid hsl(172 16% 24%);padding:18px 22px}details[open]{border-color:hsl(172 58% 70%)}summary{font-family:"Iowan Old Style","Palatino Linotype",Palatino,"Book Antiqua",Georgia,serif;font-size:19px}summary::after{color:hsl(172 58% 70%)}details p{color:hsl(172 12% 68%)}
+.lnk a{color:hsl(172 58% 70%)}
+footer{border-top:1px solid hsl(172 16% 24%);padding:38px 0 96px;color:hsl(172 12% 68%);font-size:14px;text-align:center}footer p+p{margin-top:10px}footer a{color:hsl(172 58% 70%)}
+.fab{background:hsl(172 58% 70%);color:hsl(172 14% 8%)}
+@media (max-width:760px){.col+.col,.stp div+div{border-left:0;border-top:1px solid hsl(172 16% 24%);padding-top:22px;margin-top:16px}}
+</style>
+</head>
+<body>
+<div class="banner"><span><strong>CONTOH RANCANGAN</strong> dari Studio Web Mas Edo, bukan situs resmi Klinik Duta Medika. Desain:</span><span class="dn"><a href="https://edo93fja.github.io/Landing_Demo/klinik-duta-medika-1duhaj/" aria-label="Lihat desain 1">1</a><a href="https://edo93fja.github.io/Landing_Demo/klinik-duta-medika-1duhaj/d2/" aria-label="Lihat desain 2">2</a><a href="https://edo93fja.github.io/Landing_Demo/klinik-duta-medika-1duhaj/d3/" aria-label="Lihat desain 3">3</a><a href="https://edo93fja.github.io/Landing_Demo/klinik-duta-medika-1duhaj/d4/" aria-label="Lihat desain 4">4</a><b aria-current="page" aria-label="Desain 5, sedang dilihat">5</b></span><a class="pilih" href="https://wa.me/6285213299987?text=Saya%20pilih%20Desain%205%20untuk%20Klinik%20Duta%20Medika" rel="noopener">Pilih desain ini</a></div>
+<header class="hero">
+<div class="bgp" style="background-image:url('https://images.unsplash.com/photo-1758691463198-dc663b8a64e4?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3wxMTEwMzIxfDB8MXxzZWFyY2h8OHx8ZG9jdG9yJTIwcGF0aWVudCUyMGNvbnN1bHRhdGlvbiUyMGNsaW5pY3xlbnwxfDB8fHwxNzkzMTc3NzM1fDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=1080')" aria-hidden="true"></div>
+<div class="wrap"><p class="kat">Klinik Medis di Cileungsi</p><h1>Solusi Sehat Terpercaya di Cileungsi</h1><div class="ln"></div><p class="sub">Dapatkan kemudahan akses informasi kesehatan, jadwal dokter, serta layanan medis umum langsung dari Klinik Duta Medika.</p><a class="btn" href="https://wa.me/6281289457128?text=Halo%2C%20saya%20ingin%20bertanya%20tentang%20Klinik%20Duta%20Medika" rel="noopener">Hubungi Kami</a><p class="rate"><b>4.8</b> &#9733; dari 1421 ulasan Google Maps</p></div>
+<p class="credit">Foto ilustrasi: <a href="https://unsplash.com/@silverkblack?utm_source=demo_landing&amp;utm_medium=referral" rel="noopener">Vitaly Gariev</a> di <a href="https://unsplash.com/?utm_source=demo_landing&utm_medium=referral" rel="noopener">Unsplash</a></p></header>
+<section><div class="wrap"><h2>Kenapa memilih Klinik Duta Medika</h2><div class="cols"><div class="col"><h3>Lokasi Strategis</h3><p>Berada di area Cileungsi yang mudah dijangkau untuk kunjungan pemeriksaan kesehatan.</p></div><div class="col"><h3>Tenaga Medis Profesional</h3><p>Dilayani oleh dokter dan staf medis berpengalaman di bidang kesehatan umum.</p></div><div class="col"><h3>Pelayanan Ramah</h3><p>Memberikan kenyamanan dan pelayanan kesehatan yang sepenuh hati bagi setiap pasien.</p></div></div></div></section>
+<section class="alt"><div class="wrap"><h2>Layanan kesehatan</h2><div class="lg"><div class="it"><h3>Konsultasi Dokter Umum</h3><p>Sesi konsultasi langsung mengenai kondisi kesehatan umum Anda bersama dokter.</p></div><div class="it"><h3>Pemeriksaan Kesehatan</h3><p>Layanan cek kesehatan berkala untuk memantau kondisi tubuh Anda.</p></div><div class="it"><h3>Pengobatan Penyakit Umum</h3><p>Penanganan medis untuk berbagai keluhan dan penyakit umum sehari-hari.</p></div><div class="it"><h3>Informasi Jadwal Dokter</h3><p>Penyediaan informasi waktu praktik dokter yang melayani di klinik.</p></div></div><p class="note">Daftar layanan ini hanya contoh dan akan disesuaikan dengan usaha Anda.</p></div></section>
+<section><div class="wrap"><h2>Tentang kami</h2><p class="about">Klinik Duta Medika hadir di Ruko Perum Duta Mekar Asri, Cileungsi Kidul, Kabupaten Bogor, untuk memberikan pelayanan kesehatan umum terbaik dan pemeriksaan medis yang nyaman bagi Anda.</p><figure class="shot"><img src="https://images.unsplash.com/photo-1758691462123-8a17ae95d203?crop=entropy&amp;cs=tinysrgb&amp;fit=max&amp;fm=jpg&amp;ixid=M3wxMTEwMzIxfDB8MXxzZWFyY2h8OXx8ZG9jdG9yJTIwcGF0aWVudCUyMGNvbnN1bHRhdGlvbiUyMGNsaW5pY3xlbnwxfDB8fHwxNzkzMTc3NzM1fDA&amp;ixlib=rb-4.1.0&amp;q=80&amp;w=400" alt="Foto ilustrasi Klinik Medis" loading="lazy"><figcaption>Foto ilustrasi: <a href="https://unsplash.com/@silverkblack?utm_source=demo_landing&amp;utm_medium=referral" rel="noopener">Vitaly Gariev</a> di <a href="https://unsplash.com/?utm_source=demo_landing&utm_medium=referral" rel="noopener">Unsplash</a></figcaption></figure></div></section>
+<section class="alt"><div class="wrap"><h2>Cara menghubungi</h2><div class="stp"><div><span>1</span><h3>Kirim pesan</h3><p>Hubungi lewat tombol di halaman ini.</p></div><div><span>2</span><h3>Ceritakan kebutuhan</h3><p>Sampaikan apa yang Anda cari.</p></div><div><span>3</span><h3>Diskusikan detailnya</h3><p>Bahas rincian langsung dengan pemilik usaha.</p></div></div></div></section>
+<section><div class="wrap"><h2>Pertanyaan umum</h2><details><summary>Bagaimana cara mengetahui jadwal praktik dokter?</summary><p>Silakan hubungi kami via WhatsApp untuk mendapatkan informasi lengkap mengenai jadwal dokter yang bertugas.</p></details><details><summary>Layanan apa saja yang tersedia di klinik?</summary><p>Kami menyediakan layanan kesehatan umum. Hubungi WhatsApp kami untuk detail jenis layanan dan tindakan medis.</p></details><details><summary>Di mana alamat lengkap klinik ini?</summary><p>Kami berlokasi di Ruko Perum Duta Mekar Asri, Cileungsi Kidul, Kabupaten Bogor. Hubungi kami untuk panduan rute.</p></details></div></section>
+<section class="alt"><div class="wrap"><h2>Lokasi</h2><p>Ruko Perum Duta Mekar Asri, Blk. B1 No.2, RW.3, Cileungsi Kidul, Kec. Cileungsi, Kabupaten Bogor, Jawa Barat 16820</p><p class="lnk"><a href="https://maps.google.com/?cid=11124399618450788247&amp;g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQQAhgEIAA" rel="noopener">Buka di Google Maps</a></p></div></section>
+<footer><div class="wrap">
+<p>Halaman ini adalah <strong>contoh rancangan</strong> yang dibuat oleh Studio Web Mas Edo untuk keperluan penawaran. Ini bukan situs resmi Klinik Duta Medika. Rating dan alamat berasal dari data publik Google Maps; isi lainnya adalah contoh dan akan disesuaikan. Foto bersifat ilustrasi dan bukan foto milik usaha ini.</p>
+<p>Tertarik dengan versi resmi? <a href="https://wa.me/6285213299987" rel="noopener">Hubungi Studio Web Mas Edo</a></p>
+</div></footer>
+<a class="fab" href="https://wa.me/6281289457128?text=Halo%2C%20saya%20ingin%20bertanya%20tentang%20Klinik%20Duta%20Medika" rel="noopener" aria-label="Hubungi Klinik Duta Medika">Chat</a>
+</body>
+</html>
